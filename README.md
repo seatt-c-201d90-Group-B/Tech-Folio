@@ -10,4 +10,4 @@
 
 [Project Management Board](https://github.com/orgs/seatt-c-201d90-Group-B/projects/1/views/1)
 
-![domain modeling](https://cdn.discordapp.com/attachments/1024418912298868756/1026252108774785076/Schema_Diagram.jpg)
+![domain modeling](https://docs.google.com/drawings/d/1NIYTI5I8nu5lp9enM_bIHMnkdGU4syXyb1xxYOgAic8/edit?usp=sharing)
