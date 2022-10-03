@@ -9,9 +9,16 @@
   <header>
     <h1 id="mainTitle">Instructions for page</h1>
   </header>
+  <nav>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="preview.html">Preview</a>
+      <a href="About.html">About Us</a>
+    </div>
+  </nav>
   <!-- CODE ???? -->
   <main>
-    <section id="aboutMe">
+    <section id="aboutMeInfo">
       <h3 id="aboutmeTitle">About yourself</h3>
     </section>
     <section id="biography">
@@ -31,7 +38,7 @@
     <section id="projectCard">
       <form id="projectForm">
         <fieldset>
-          <legend id="legend">Tell me about yourself</legend>
+          <legend id="legend">Tell me about your project</legend>
           <label for="title">Title</label>
           <input id="title" type="text" name="title" required>
           <label for="info">Information about project</label>
@@ -41,12 +48,12 @@
         </fieldset>
         <button id="projectBtn" type="submit">Submit</button>
       </form>
-
-
-
     </section>
+    <section id="cardList"></section>
   </main>
+ <footer>&copy; TechFolio 2022</footer>
   <script src="JS/landing.js"></script>
+
 </body>
 
 </html>
