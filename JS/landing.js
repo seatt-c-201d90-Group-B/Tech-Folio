@@ -49,4 +49,3 @@ function addCard(event){
 }
 formBio.addEventListener('submit' , addBio);
 projectForm.addEventListener('submit', addCard);
-
