@@ -1,7 +1,6 @@
 'use strict';
 // creating global variables
 let userInfo = [];
-let cards = [];
 let formBio = document.getElementById('formBio');
 let projectForm = document.getElementById('projectForm');
 let cardList = document.getElementById('cardList');
@@ -19,18 +18,18 @@ function Cards(title, info, link) {
   this.title = title;
   this.info = info;
   this.link = link;
-  cards.push(this);
+  cardsStored.push(this);
 }
 // setting local storage
 function loadBio() {
   const bioString = JSON.stringify(userInfo);
   localStorage.setItem('userInfo', bioString);
 }
-function loadCards() {
-  const cardsString = JSON.stringify(cards);
-  localStorage.setItem('cards', cardsString);
 
+function loadCards() {
+  localStorage.setItem('cards', JSON.stringify(cardsStored));
 }
+
 function addBio(event) {
   event.preventDefault();
   let name = document.getElementById('name').value;
@@ -96,7 +95,6 @@ function renderCards() {
 function removeProject(event) {
   if (event.target.textContent === 'X') {
     cardsStored.splice(event.target.id, 1);
-    cards.splice(event.target.id, 1);
     while (ul.firstChild) {
       ul.removeChild(ul.lastChild);
     }
