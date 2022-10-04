@@ -1,1 +1,140 @@
+header {
+  display: flex;
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+}
+
+nav {
+margin-left: auto;
+margin-right: auto;
+}
+
+.navbar a {
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: grey;
+  text-decoration: none;
+}
+
+.navbar :hover {
+  color: aquamarine;
+}
+
+#teamTitle {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 55pt;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+  max-height: 250px;
+  max-width: 200px;
+  border: solid black 1px;
+  border-radius: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.teamCont{
+  display: grid;
+}
+
+h2 {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+#person1{
+border: solid black 1px;
+border-radius: 16px;
+margin-bottom: 20px;
+}
+
+#imgPerson1 {
+float: left;
+margin-bottom: 10px;
+}
+
+#person1Name {
+float: left;
+margin-left: 10px;
+margin-top: 8px;
+}
+
+#person2{
+border: solid black 1px;
+border-radius: 16px;
+margin-bottom: 20px;
+}
+
+#imgPerson2 {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#person2Name{
+float: right;
+margin-top: 10px;
+}
+
+#person3{
+border: solid black 1px;
+border-radius: 16px;
+margin-bottom: 20px;
+}
+
+#imgPerson3 {
+float: left;
+margin-bottom: 10px;
+}
+
+#person3Name {
+float: left;
+margin-left: 10px;
+margin-top: 8px;
+}
+
+#person4{
+border: solid black 1px;
+border-radius: 16px;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+#imgPerson4 {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#person4Name{
+float: right;
+margin-top: 10px;
+}
+
+#person5{
+border: solid black 1px;
+border-radius: 16px;
+margin-bottom: 20px;
+}
+
+#imgPerson5 {
+float: left;
+margin-bottom: 10px;
+}
+
+#person5Name {
+float: left;
+margin-left: 10px;
+margin-top: 8px;
+}
+
 
