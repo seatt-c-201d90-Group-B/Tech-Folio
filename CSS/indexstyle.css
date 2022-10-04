@@ -1,0 +1,220 @@
+header {
+  text-align: center;
+
+}
+
+body {
+  background-color: silver;
+
+}
+
+.navbar {
+  text-align: center;
+  text-justify: auto;
+  padding: 30px;
+}
+
+.navbar a {
+  color: azure;
+  backface-visibility: hidden;
+  background: #000000;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 40px;
+  
+}
+
+  .navbar a:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .navbar a:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+#mainTitle {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+} /* h1 */
+
+#aboutMe {
+text-align: justify;
+
+} /* main section 1 */
+
+
+#aboutMeTitle {
+text-align:left;
+text-
+
+
+}/* h3*/
+
+#aboutMe {
+  text-align: left;
+}
+
+#position {
+  text-align: left;
+
+}
+#name {
+  text-align: left;
+}
+
+
+#biography {
+  text-align: left;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+} /* main section 2 */
+
+#bioLegend {
+  text-align: left;
+  color: darkslategrey;
+}
+
+#formBio {
+  text-align: left;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}  /*form 1*/ 
+
+#bioBtn {
+  backface-visibility: hidden;
+  background: #000000;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#bioBtn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#bioBtn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+
+
+#projectCard {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+}
+
+#projectForm {
+ text-align: center;
+  margin: auto;
+  width: 65%;
+  padding: 10px;
+}
+
+#cardList {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  border: 10px solid #41403e;
+  padding: 10px;
+}
+
+#legend {
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+}
+
+#info {
+  text-align: center;
+}
+
+#link {
+  text-align: center;
+}
+
+#projectBtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  backface-visibility: hidden;
+  background: #000000;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+  
+  #projectBtn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  #projectBtn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+
+
+/* About Section Styling */
