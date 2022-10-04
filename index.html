@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TechFolio</title>
+</head>
+
+<body>
+  <header>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <h1 id="mainTitle">Instructions for page</h1>
+  </header>
+  <nav>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="preview.html">Preview</a>
+      <a href="About.html">About Us</a>
+    </div>
+  </nav>
+  <!-- CODE ???? -->
+  <main>
+    <section id="aboutMeInfo">
+      <h3 id="aboutmeTitle">About yourself</h3>
+    </section>
+    <section id="biography">
+      <form id="formBio">
+        <fieldset>
+          <legend id="bioLegend">Tell me about yourself</legend>
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required>
+          <label for="aboutMe">About Yourself</label>
+          <input id="aboutMe" type="text" name="aboutMe" required>
+          <label for="position">Postion</label>
+          <input id="position" type="text" name="position" required>
+        </fieldset>
+        <button id="bioBtn" type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="projectCard">
+      <form id="projectForm">
+        <fieldset>
+          <legend id="legend">Tell me about your project</legend>
+          <label for="title">Title</label>
+          <input id="title" type="text" name="title" required>
+          <label for="info">Information about project</label>
+          <input id="info" type="text" name="info" required>
+          <label for="link">Link To Project</label>
+          <input id="link" type="text" name="link" required>
+        </fieldset>
+        <button id="projectBtn" type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="cardList"></section>
+  </main>
+ <footer>&copy; TechFolio 2022</footer>
+  <script src="JS/landing.js"></script>
+
+</body>
+
+</html>
