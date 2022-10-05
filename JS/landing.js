@@ -1,12 +1,20 @@
 'use strict';
+
 // creating global variables
 let userInfo = [];
+let cardsStored = [];
+
+// Getting html elements by id
 let formBio = document.getElementById('formBio');
 let projectForm = document.getElementById('projectForm');
 let cardList = document.getElementById('cardList');
-let cardsStored = [];
 let clearButton = document.getElementById('resetBtn');
-// creating constructor for cards objects
+let ul = document.createElement('ul');
+cardList.appendChild(ul);
+
+// *****Constructor functions*******
+
+// userinfo constructor
 function Bio(name, aboutMe, position) {
   this.name = name;
   this.aboutMe = aboutMe;
@@ -14,13 +22,15 @@ function Bio(name, aboutMe, position) {
   userInfo.push(this);
 }
 
+//card constructor
 function Cards(title, info, link) {
   this.title = title;
   this.info = info;
   this.link = link;
   cardsStored.push(this);
 }
-// setting local storage
+
+// **** setting local storage ****
 function loadBio() {
   const bioString = JSON.stringify(userInfo);
   localStorage.setItem('userInfo', bioString);
@@ -30,6 +40,8 @@ function loadCards() {
   localStorage.setItem('cards', JSON.stringify(cardsStored));
 }
 
+
+// adds userinfo to local storage and removes any old userinfo
 function addBio(event) {
   event.preventDefault();
   let name = document.getElementById('name').value;
@@ -40,14 +52,29 @@ function addBio(event) {
     userInfo.shift();
   }
   loadBio();
-
 }
+
+// function reloadBio(){
+//   let names = document.getElementById('name').value;
+//   let aboutMe = document.getElementById('aboutMe').value;
+//   let position = document.getElementById('position').value;
+//   if(names === ''){
+//     let userStored = JSON.parse(localStorage.getItem('userInfo')) || [];
+//     names.value = userStored[0].name;
+//     aboutMe.value = userStored[0].aboutMe;
+//     position.value = userStored[0].position;
+
+//   }
+// }
+// reloadBio();
+// updates cardsStored array when items are added or removed
 function cardsParsed() {
   cardsStored = JSON.parse(localStorage.getItem('cards')) || [];
 
 }
 
-
+// grabs form information and goes through the constructor function
+// removes all child elements from ul and then rerenders them
 function addCard(event) {
   event.preventDefault();
   let title = document.getElementById('title').value;
@@ -63,7 +90,9 @@ function addCard(event) {
   projectForm.reset();
 }
 
-// creating render function
+// **** creating render functions ****
+
+// renders bio preview
 function renderBio() {
   let name = document.getElementById('aboutMeName');
   name.textContent = userInfo[0].name;
@@ -72,9 +101,8 @@ function renderBio() {
   let aboutMe = document.getElementById('aboutMeP');
   aboutMe.textContent = userInfo[0].aboutMe;
 }
-let ul = document.createElement('ul');
 
-cardList.appendChild(ul);
+// renders all cards and creates separate li elements for each
 function renderCards() {
   cardsParsed();
   for (let i = 0; i < cardsStored.length; i++) {
@@ -104,6 +132,7 @@ function renderCards() {
     li.appendChild(a);
   }
 }
+
 // add remove project function
 function removeProject(event) {
   if (event.target.textContent === 'X') {
@@ -115,10 +144,14 @@ function removeProject(event) {
     renderCards();
   }
 }
+
+// allows user to completely restart page and clear local storage
 function restartPage() {
   localStorage.clear();
   location.href = 'index.html';
 }
+
+//functions called on load
 cardsParsed();
 renderCards();
 
