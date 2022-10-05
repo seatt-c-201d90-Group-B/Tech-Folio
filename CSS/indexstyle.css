@@ -8,10 +8,17 @@ body {
 
 }
 
+fieldset {
+  padding-bottom: 15px;
+  margin-left: 15px;
+}
+
+
 .navbar {
   text-align: center;
   text-justify: auto;
   padding: 30px;
+  background-color: #000000;
 }
 
 .navbar a {
@@ -24,7 +31,7 @@ body {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -.01em;
@@ -38,7 +45,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-right: 40px;
+  margin-right: 50px;
   
 }
 
@@ -52,44 +59,63 @@ body {
   }
 
 #mainTitle {
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  border: 3px solid rgb(0, 0, 0);
-  padding: 10px;
+margin: auto;
+width: 50%;
+padding-bottom: 35px;
 } /* h1 */
 
-techFolio
+
+#techFolio {
+  font-size: 5vw;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-family: "Audiowide", sans-serif;
+
+}
 
 #aboutMe {
-text-align: justify;
-
-} /* main section 1 */
+text-align: left;
 
 
-#aboutMeTitle {
-text-align:left;
-text-
+} /* main section 1 box*/
+
+
+#aboutmeTitle {
+font-family: "Audiowide", sans-serif;
+padding-left: 15px;
+font-weight: 600;
+font-size: 22px;
 
 
 }/* h3*/
 
+
+#bioLegend {
+  font-family: "Audiowide", sans-serif;
+
+} /*about me info*/
+
 #aboutMe {
-  text-align: left;
+text-align: left;
+font-family: "Audiowide", sans-serif;
 }
 
 #position {
-  text-align: left;
+text-align: left;
+font-family: "Audiowide", sans-serif;
 
 }
 #name {
-  text-align: left;
+text-align: left;
+font-family: "Audiowide", sans-serif;
 }
 
 
 #biography {
-  text-align: left;
-
+text-align: left;
+font-family: "Audiowide", sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
 } /* main section 2 */
@@ -97,16 +123,17 @@ text-
 #bioLegend {
   text-align: left;
   color: darkslategrey;
+  padding-bottom: 15px;
 }
 
 #formBio {
   text-align: left;
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-}  /*form 1*/ 
+  font-family: "Audiowide", sans-serif;
+ }  /*form 1*/ 
 
 #bioBtn {
+
+
   backface-visibility: hidden;
   background: #000000;
   border: 0;
@@ -115,7 +142,7 @@ text-
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -.01em;
@@ -147,14 +174,15 @@ text-
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  font-family: "Audiowide", sans-serif;
 
 }
 
 #projectForm {
- text-align: center;
-  margin: auto;
+text-align: justify;
   width: 65%;
   padding: 10px;
+  font-family: "Audiowide", sans-serif;
 }
 
 #cardList {
@@ -162,16 +190,25 @@ text-
   margin: auto;
   width: 60%;
   border: 10px solid #41403e;
-  padding: 10px;
+  padding-bottom: 25px;
+ 
+
 }
 
 #legend {
   text-align: center;
+  padding-bottom: 30px;
+  padding: 10px;
+
 }
 
 #title {
-  text-align: center;
+  text-align: left;
+
 }
+
+
+
 
 #info {
   text-align: center;
@@ -192,7 +229,7 @@ text-
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
+  font-family: "Audiowide", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -.01em;
@@ -219,4 +256,81 @@ text-
 
 
 
-/* About Section Styling */
+  #viewResults {
+
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  backface-visibility: hidden;
+  background: #000000;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+  
+
+  #viewResults:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  #viewResults.navbar {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+
+  }
+
+#resetBtn {
+  padding-top: 25px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  backface-visibility: hidden;
+  background: #000000;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 35px;
+  }
+  
+  #resetBtn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  #resetBtn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+
+  }
