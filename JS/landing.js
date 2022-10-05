@@ -1,7 +1,6 @@
 'use strict';
 // creating global variables
 let userInfo = [];
-let cards = [];
 let formBio = document.getElementById('formBio');
 let projectForm = document.getElementById('projectForm');
 let cardList = document.getElementById('cardList');
@@ -19,18 +18,18 @@ function Cards(title, info, link) {
   this.title = title;
   this.info = info;
   this.link = link;
-  cards.push(this);
+  cardsStored.push(this);
 }
 // setting local storage
 function loadBio() {
   const bioString = JSON.stringify(userInfo);
   localStorage.setItem('userInfo', bioString);
 }
-function loadCards() {
-  const cardsString = JSON.stringify(cards);
-  localStorage.setItem('cards', cardsString);
 
+function loadCards() {
+  localStorage.setItem('cards', JSON.stringify(cardsStored));
 }
+
 function addBio(event) {
   event.preventDefault();
   let name = document.getElementById('name').value;
@@ -66,7 +65,12 @@ function addCard(event) {
 
 // creating render function
 function renderBio() {
-
+  let name = document.getElementById('aboutMeName');
+  name.textContent = userInfo[0].name;
+  let position = document.getElementById('aboutPosi');
+  position.textContent = userInfo[0].position;
+  let aboutMe = document.getElementById('aboutMeP');
+  aboutMe.textContent = userInfo[0].aboutMe;
 }
 let ul = document.createElement('ul');
 
@@ -76,18 +80,26 @@ function renderCards() {
   for (let i = 0; i < cardsStored.length; i++) {
     let li = document.createElement('li');
     ul.appendChild(li);
-    let h3 = document.createElement('h3');
-    h3.innerText = cardsStored[i].title;
-    li.appendChild(h3);
+    let div = document.createElement('div');
+    div.id = 'xdiv';
+    li.appendChild(div);
     let deleteProject = document.createElement('p');
     deleteProject.innerText = 'X';
     deleteProject.id = i;
-    li.appendChild(deleteProject);
+    deleteProject.className = 'x';
+    div.appendChild(deleteProject);
+    let h3 = document.createElement('h3');
+    h3.innerText = cardsStored[i].title;
+    h3.className = 'title';
+    li.appendChild(h3);
     let p = document.createElement('p');
     p.innerText = cardsStored[i].info;
+    p.className = 'cardinfo';
     li.appendChild(p);
     let a = document.createElement('a');
     a.href = cardsStored[i].link;
+    a.className = 'link';
+    a.target = '_blank';
     a.innerText = 'Project';
     li.appendChild(a);
   }
@@ -96,7 +108,6 @@ function renderCards() {
 function removeProject(event) {
   if (event.target.textContent === 'X') {
     cardsStored.splice(event.target.id, 1);
-    cards.splice(event.target.id, 1);
     while (ul.firstChild) {
       ul.removeChild(ul.lastChild);
     }
