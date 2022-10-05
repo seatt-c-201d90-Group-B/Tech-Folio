@@ -1,11 +1,9 @@
 header {
   text-align: center;
-
 }
 
 body {
   background-color: silver;
-
 }
 
 fieldset {
@@ -60,8 +58,12 @@ fieldset {
 
 #mainTitle {
 margin: auto;
-width: 50%;
+width: 75%;
 padding-bottom: 35px;
+border: 3px solid #41403e;
+text-align: center;
+font-family: "Audiowide", sans-serif;
+padding-top: 5px;
 } /* h1 */
 
 
@@ -84,32 +86,44 @@ text-align: left;
 
 #aboutmeTitle {
 font-family: "Audiowide", sans-serif;
-padding-left: 15px;
+padding-left: 25px;
 font-weight: 600;
 font-size: 22px;
+padding-top: 30px;
 
-
+padding-bottom: 20px;
 }/* h3*/
 
 
 #bioLegend {
   font-family: "Audiowide", sans-serif;
-
+padding-left: 25px;
 } /*about me info*/
 
+#abotMe{
+  position: relative;
+  top: 30px;
+  right: 270px;
+}
 #aboutMe {
+position: relative;
+top: 30px;
+right: 250px;
 text-align: left;
 font-family: "Audiowide", sans-serif;
+border-radius: 3px;
 }
 
+#pos {
+  position: relative;
+  right: 300px;
+}
 #position {
+position: relative;
+right: 300px;
 text-align: left;
 font-family: "Audiowide", sans-serif;
-
-}
-#name {
-text-align: left;
-font-family: "Audiowide", sans-serif;
+border-radius: 1px;
 }
 
 
@@ -131,9 +145,22 @@ font-family: "Audiowide", sans-serif;
   font-family: "Audiowide", sans-serif;
  }  /*form 1*/ 
 
+
+
+#bioBtn:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#bioBtn:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
 #bioBtn {
-
-
+  position: relative;
+  left: 500px;
+  bottom: 5px;
+  width: 20%;
   backface-visibility: hidden;
   background: #000000;
   border: 0;
@@ -141,7 +168,7 @@ font-family: "Audiowide", sans-serif;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   font-family: "Audiowide", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
@@ -156,18 +183,18 @@ font-family: "Audiowide", sans-serif;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  }
+  
+  #bioBtn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  #bioBtn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+ 
 }
-
-#bioBtn:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
-}
-
-#bioBtn:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-}
-
-
 
 
 #projectCard {
@@ -175,15 +202,17 @@ font-family: "Audiowide", sans-serif;
   padding-bottom: 20px;
   text-align: center;
   font-family: "Audiowide", sans-serif;
-
 }
 
 #projectForm {
-text-align: justify;
+  display: flex;
+text-align: center;
+margin-left: 200px;
   width: 65%;
   padding: 10px;
   font-family: "Audiowide", sans-serif;
 }
+
 
 #cardList {
   text-align: center;
@@ -195,35 +224,33 @@ text-align: justify;
   flex-direction: column;
   height: auto;
   overflow-y: scroll;
-
 }
 
-#legend {
-  text-align: center;
-  padding-bottom: 30px;
-  padding: 10px;
-
-}
 
 #title {
   text-align: left;
-
+  margin-bottom: 20px;
+  position: absolute;
 }
 
-
-
-
-#info {
-  text-align: center;
+.newPcard1 {
+  color: silver;
 }
 
-#link {
-  text-align: center;
+.info1 {
+  margin-top: 10px;
+  color: silver;
+  margin-right: 75px;
+}
+
+.link1 {
+  margin-top: 10px;
+  color:silver;
+  margin-left: 21px;
+
 }
 
 #projectBtn {
-  padding-top: 20px;
-  padding-bottom: 20px;
   backface-visibility: hidden;
   background: #000000;
   border: 0;
@@ -231,7 +258,7 @@ text-align: justify;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   font-family: "Audiowide", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
@@ -256,7 +283,6 @@ text-align: justify;
   #projectBtn:focus {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   }
-
 
 
 
@@ -300,6 +326,7 @@ text-align: justify;
   }
 
 #resetBtn {
+
   padding-top: 25px;
   text-align: center;
   padding-top: 20px;
@@ -402,4 +429,3 @@ ul li .x {
 .link {
   grid-area: link;
 }
-

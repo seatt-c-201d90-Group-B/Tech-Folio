@@ -33,9 +33,9 @@
           <legend id="bioLegend">Tell me about yourself:</legend>
           <label for="name">Name:</label>
           <input id="name" type="text" name="name" required>
-          <label for="aboutMe">About Yourself:</label>
+          <label id="abotMe" for="aboutMe">About Yourself:</label>
           <input id="aboutMe" type="text" name="aboutMe" required>
-          <label for="position">Postion:</label>
+          <label id="pos" for="position">Postion:</label>
           <input id="position" type="text" name="position" required>
         </fieldset>
         <button id="bioBtn" type="submit">Submit</button>
@@ -44,13 +44,18 @@
     <section id="projectCard">
       <form id="projectForm">
         <fieldset>
-          <legend id="legend">Tell me about your project</legend>
-          <label for="title">Title</label>
-          <input id="title" type="text" name="title" required>
-          <label for="info">Information about project</label>
-          <input id="info" type="text" name="info" required>
-          <label for="link">Link To Project</label>
-          <input id="link" type="text" name="link" required>
+          <div class="newPcard1">
+            <label for="newPcard">New project card</label>
+            <input id="newPcard" type="text" name="newPcard" placeholder="New project card" required>
+          </div>
+          <div class="info1">
+            <label for="info">Information about project</label>
+            <input id="info" type="text" name="info" placeholder="Information about projec" required>
+          </div>
+          <div class="link1">
+            <label for="link">Link To Project</label>
+            <input id="link" type="text" name="link" placeholder="Link To Project" required>
+          </div>
         </fieldset>
         <button id="projectBtn" type="submit">Submit</button>
       </form>
@@ -59,7 +64,7 @@
     <button onclick="location.href='preview.html'" type="button" id="viewResults">View Results</button>
     <button id="resetBtn">Reset</button>
   </main>
- <footer>&copy; TechFolio 2022</footer>
+  <footer>&copy; TechFolio 2022</footer>
   <script src="JS/landing.js"></script>
 
 </body>
