@@ -1,0 +1,272 @@
+body{
+  color: rgb(75, 75, 75);
+}
+/* About the Team! */
+#teamTitle {
+  text-align: center;
+  font-size: 100pt;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  color: rgb(141, 141, 141);
+}
+
+
+/* Code for images */
+img {
+  max-height: 250px;
+  max-width: 200px;
+  border: solid gray 1px;
+  border-radius: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Container For Team Members Assets */
+.teamCont {
+  display: grid;
+}
+
+/* Links for github */
+.teamCont a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* Hover for Github Links */
+.teamCont a:hover {
+  color: gold;
+}
+
+/* Names */
+h2 {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+/* Code For Elias */
+/* Container */
+#person1 {
+  border: solid gray 1px;
+  border-radius: 16px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  height: 250px;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: rgb(239, 234, 240);
+}
+
+/* Image positioning / border */
+#imgPerson1 {
+  float: left;
+  margin-top: 50px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* Name Positioning */
+#person1Name {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+/* Github Link Positioning */
+#person1GH {
+  position: relative;
+  bottom: -15px;
+  left: 450px;
+}
+
+/* Paragraph Positioning */
+#aboutPerson1 {
+  position: relative;
+  font-size: 11pt;
+  text-align: center;
+  margin-top: 10px;
+  left: 10px;
+}
+
+/* Code for Eric */
+/* Container */
+#person2 {
+  margin-left: auto;
+  margin-right: 50px;
+  border: solid gray 1px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: rgb(239, 234, 240);
+}
+
+/* Image positioning / Border */
+#imgPerson2 {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* Name Positioning */
+#person2Name {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* Github Link Positioning */
+#person2GH {
+  position: relative;
+  bottom: -20px;
+  left: 260px;
+}
+
+/* Paragraph Positioning */
+#aboutPerson2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* Code for Joey */
+/* Container */
+#person3 {
+  border: solid gray 1px;
+  border-radius: 16px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: rgb(239, 234, 240);
+}
+
+/* Image positioning / Border */
+#imgPerson3 {
+  float: left;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* Name Positioning */
+#person3Name {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* Github Link Positioning */
+#person3GH {
+  position: relative;
+  bottom: -13px;
+  left: 240px;
+}
+
+/* Paragraph Positioning */
+#aboutPerson3 {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/* Code for Seth */
+/* Container */
+#person4 {
+  margin-left: auto;
+  margin-right: 50px;
+  border: solid gray 1px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: rgb(239, 234, 240);
+}
+
+/* Image positioning / Border */
+#imgPerson4 {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* Name Positioning */
+#person4Name {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* Github Link Positioning */
+#person4GH {
+  position: relative;
+  bottom: -70px;
+  left: 242px;
+}
+
+/* Paragraph Positioning */
+#aboutPerson4 {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+/* Code For Trace */
+/* Container */
+#person5 {
+  border: solid gray 1px;
+  border-radius: 16px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  max-width: 850px;
+  box-shadow: 2px 2px 2px 2px gray;
+  background-color: rgb(239, 234, 240);
+}
+
+/* Image positioning / Border */
+#imgPerson5 {
+  float: left;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+/* Name Positioning */
+#person5Name {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Github Link Positioning */
+#person5GH {
+  position: relative;
+  top: 5px;
+  left: 260px;
+}
+
+/* Paragraph Positioning */
+#aboutPerson5 {
+  position: relative;
+  font-size: 13pt;
+  text-align: center;
+  left: 20px;
+}
+
+/* Team Bios */
+p {
+  font-size: 14pt;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 6px;
+  margin-left: 6px;
+  width: 750px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-left: 38px;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20pt;
+  font-weight: 500;
+  color: silver;
+}

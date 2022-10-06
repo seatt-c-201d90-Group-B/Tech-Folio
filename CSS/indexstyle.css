@@ -1,0 +1,301 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Title */
+#techFolio {
+  text-align: center;
+  font-size: 100pt;
+  margin-top: 70px;
+}
+
+/* Insturctions Box */
+#instBox {
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: gray 2px solid;
+  padding: 40px;
+  color: gold;
+  font-size: 16pt;
+  line-height: 25px;
+}
+
+/* Top Form & Submit */
+#biography {
+  margin-top: 40px;
+  margin-left: 180px;
+}
+
+/* Name Bar */
+#name {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color:   #6e6e6e;
+  color: gold;
+  width: 300px;
+  height: 20px;
+}
+
+#name::placeholder {
+ color: rgb(75, 75, 75);
+}
+
+/* Position Bar */
+#position {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color:   #6e6e6e;
+  color: gold;
+  width: 300px;
+  height: 20px;
+}
+#position::placeholder {
+  color: rgb(75, 75, 75);
+ }
+ 
+/* About yourself field */
+#aboutMe {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color:  #6e6e6e;
+  color: gold;
+  width: 1100px;
+  height: 80px;
+  text-overflow: wrap;
+}
+
+#aboutMe::placeholder {
+  color: rgb(75, 75, 75);
+ }
+ 
+/* Top Submit button */
+#bioBtn {
+  float: right;
+  position: relative;
+  right: 290px;
+  bottom: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(56, 56, 56);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+}
+
+/* Bottom Form & Button */
+#projectForm {
+  text-align: center;
+  position: relative;
+  left: 100px;
+  top: 80px;
+}
+
+/* Name Project Card Bar */
+#title {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color:  #6e6e6e;
+  color: gold;
+  width: 550px;
+  height: 30px;
+  border-radius: 20px;
+}
+#title::placeholder {
+  color: rgb(75, 75, 75);
+ }
+
+/* Info About Project Bar */
+#info {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color:  #6e6e6e;
+  color: gold;
+  width: 900px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+#info::placeholder {
+  color: rgb(75, 75, 75);
+ }
+
+/* Link to Project Bar */
+#link {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color:  #6e6e6e;
+  color: gold;
+  width: 900px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+#link::placeholder {
+  color: rgb(75, 75, 75);
+ }
+
+/* Bottom Submit Button */
+#projectBtn {
+  margin-right: 200px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color:rgb(56, 56, 56);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
+  margin-bottom: 100px;
+}
+
+/* View Results Button */
+#viewResults {
+  margin-left: 725px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(56, 56, 56);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
+  position: relative;
+  top: 120px;
+}
+
+/* Reset Button */
+#resetBtn {
+  margin-left: 40px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(56, 56, 56);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
+  position: relative;
+  top: 120px;
+}
+
+/* Footer */
+footer {
+  color: gold;
+  height: 50px;
+  background-color: rgb(75, 75, 75);
+  text-align: center;
+  padding-top: 30px;
+  font-size: 16pt;
+  position: relative;
+  bottom: -170px;
+}
+
+/* About Section Styling */
+ul {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card */
+li {
+  background-color: #6e6e6e;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(1fr, auto);
+  grid-template-areas:
+    "title title title x"
+    "info info info info"
+    "info info info info"
+    "info info info info"
+    "link link link link"
+  ;
+}
+
+/* Card Title */
+.title {
+  background-color: #6e6e6e;
+  padding-left: 20px;
+  margin-left: 5;
+  grid-area: title;
+  font-size: 1vw;
+  justify-content: space-around;
+  color: gold;
+}
+
+/* X on Card */
+ul li .x {
+  border-style: solid;
+  background-color: #6e6e6e;
+  border-color: #070606;
+  border-width: 1px;
+  height: 25px;
+  width: 25px;
+  margin-left: 13px;
+  margin-bottom: 2px;
+  color: #41403E;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+#xdiv {
+  width: 30px;
+  height: 40px;
+  background-color: white;
+  grid-area: x;
+  text-align: center;
+  height: max-content;
+}
+
+.x:hover{
+  cursor: pointer;
+  color: red;
+  background-color: gold;
+}
+
+/* Body Text on Card */
+.cardinfo {
+  background-color: #6e6e6e;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  max-height: 80px;
+  grid-area: info;
+  color: #000000;
+}
+
+/* Link on Card */
+.link {
+  grid-area: link;
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+/* Container for Cards */
+#cardList {
+  margin-top: 700px;
+  text-align: center;
+  margin: auto;
+  max-width: 60%;
+  border: 5px solid #41403E;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-y: scroll;
+  border-radius: 4px;
+}
