@@ -32,8 +32,7 @@ function Cards(title, info, link) {
 
 // **** setting local storage ****
 function loadBio() {
-  const bioString = JSON.stringify(userInfo);
-  localStorage.setItem('userInfo', bioString);
+  localStorage.setItem('userInfo',JSON.stringify (userInfo));
 }
 
 function loadCards() {

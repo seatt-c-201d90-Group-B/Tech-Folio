@@ -18,6 +18,7 @@ function randNum() {
 
 // renders User's about me information
 function rendBio() {
+
   let name = document.getElementById('aboutMeName');
   name.textContent = bioStored[0].name;
   let position = document.getElementById('aboutPosi');
@@ -30,7 +31,7 @@ function rendBio() {
 
 // chooses at most 6 random numbers to display different indexes of cardsstored array so that no cards are the same and are random on each load
 function displayRandCardNum() {
-  if (cardsStored.length > 6) {
+  if (cardsStored.length >= 6 ) {
     while (cardDisplay.length < 6) {
       let numRand = randNum();
       if (!cardDisplay.includes(numRand)) {
@@ -50,22 +51,36 @@ function displayRandCardNum() {
 // renders cards on page
 function rendCard() {
   for (let i = 0; i < cardDisplay.length; i++) {
-    let li = document.createElement('li');
-    cardsList.appendChild(li);
+    let flipCard = document.getElementById(`${i}`);
+    let cardFront = document.createElement('section');
+    cardFront.className = `obj${i}Front`;
+    flipCard.appendChild(cardFront);
+    let cardBack = document.createElement('section');
+    cardBack.className = `obj${i}Back`;
+    flipCard.appendChild(cardBack);
     let h3 = document.createElement('h3');
     h3.innerText = cardsStored[cardDisplay[i]].title;
+    cardFront.appendChild(h3);
     h3.className = 'title';
     li.appendChild(h3);
     let p = document.createElement('p');
+    p.className = 'prjInfo';
     p.innerText = cardsStored[cardDisplay[i]].info;
-    p.className = 'cardinfo';
-    li.appendChild(p);
-    let iframe = document.createElement('iframe');
-    iframe.src = cardsStored[cardDisplay[i]].link;
-    iframe.alt = 'Project';
-    iframe.className = 'link';
-    iframe.target = '_blank';
-    li.appendChild(iframe);
+    cardFront.appendChild(p);
+    let div = document.createElement('div');
+    div.className = 'iframeContainer';
+    cardBack.appendChild(div);
+    let a = document.createElement('iframe');
+    a.src = cardsStored[cardDisplay[i]].link;
+    a.alt = 'Project';
+    div.appendChild(a);
+    let b = document.createElement('a');
+    b.href = cardsStored[cardDisplay[i]].link;
+    b.className = 'previewLink';
+    b.target = '_blank';
+    b.innerText = 'Project';
+    cardBack.appendChild(b);
+
   }
 }
 

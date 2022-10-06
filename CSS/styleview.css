@@ -1,0 +1,1040 @@
+
+header {
+  display: flex;
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+}
+
+nav {
+margin-left: auto;
+margin-right: auto;
+}
+
+.navbar a {
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: grey;
+  text-decoration: none;
+}
+
+.navbar :hover {
+  color: aquamarine;
+}
+#aboutMeArt{
+  justify-content: center;
+  width: 1080px;
+  height: auto;
+  position: absolute;
+  top: 100px;
+  right: 740px;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 16px;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+#aboutMeArt h1{
+  font-size: 5vw;
+}
+.previewPos{
+  font-size: 3vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+footer{
+  padding-top: 50px;
+  height: 50px;
+  position: relative;
+  background-color: black;
+  color: grey;
+  text-align: center;
+}
+iframe{
+  width: 600px;
+  height: 600px;
+  border: none;
+  margin-left: 5px;
+  margin-top: 17px;
+  -webkit-transform: scale(.15,.1);
+  -moz-transform: scale(.15,.1);
+  -ms-transform: scale(.15,.1);
+  transform: scale(.15,.1);
+  -webkit-transform-origin:0 0;
+  -moz-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  transform-origin:0 0;
+}
+.iframeContainer{
+  width: 100px;
+height: 100px;
+
+/* overflow: hidden; */
+}
+.flipCards{
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  width: 2000px;
+  height: 1500px;
+  position: relative;
+  padding: 4%;
+  margin: 10%;
+  top: 15%;
+  left: 15%;
+ overflow-y: hidden;
+}
+h3{
+  padding: 10px;
+}
+.prjInfo{
+  padding: 5px;
+  font-size: 7px;
+}
+.previewLink{
+  position: absolute;
+  top: 80px;
+  right: 27px;
+}
+
+.objOne {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+  animation:topLeft 2s, topLeftStretch 2s;
+  -webkit-animation: topLeft 2s, topLeftStretch 2s;
+  animation-delay: 0s, 2.5s;
+  -webkit-animation-delay: 0s, 2.5s;
+  animation-fill-mode: forwards;
+  top:400px;
+}
+.objTwo {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+  animation: topMiddle 2s, topMiddleStretch 2s;
+  -webkit-animation: topMiddle 2s, topMiddleStretch 2s;
+  animation-delay: 0s, 2.5s;
+  -webkit-animation-delay: 0s, 2.5s;
+  animation-fill-mode: forwards;
+  top:400px;
+}
+.objThree {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+  animation: topRight 2s, topRightStretch 2s;
+  -webkit-animation: topRight 2s, topRightStretch 2s;
+  animation-delay: 0s, 2.5s;
+  -webkit-animation-delay: 0s, 2.5s;
+  animation-fill-mode: forwards;
+  top:200px;
+}
+.objFour {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+  animation: bottomLeft 2s, bottomLeftStretch 2s;
+  -webkit-animation: bottomLeft 2s, bottomLeftStretch 2s;
+  animation-delay: 0s, 2.5s;
+  -webkit-animation-delay: 0s, 2.5s;
+  animation-fill-mode: forwards;
+  top:100px;
+}
+.objFive {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+  animation: bottomMiddle 2s, bottomMiddleStretch 2s;
+  -webkit-animation: bottomMiddle 2s, bottomMiddleStretch 2s;
+  animation-delay: 0s, 2.5s;
+  -webkit-animation-delay: 0s, 2.5s;
+  animation-fill-mode: forwards;
+  top:0px;
+}
+.objSix {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+  animation:bottomRight 2s, bottomRightStretch 2s;
+  -webkit-animation: bottomRight 2s, bottomRightStretch 2s;
+  animation-delay: 0s, 2.5s;
+  -webkit-animation-delay: 0s, 2.5s;
+  animation-fill-mode: forwards;
+  top:-100px;
+}
+
+@keyframes topLeft {
+  	0% {
+		-webkit-transform: translate(550px, 100px);
+	}
+
+	100% {
+		-webkit-transform: translate(100px, -200px);
+	}
+}
+@keyframes topMiddle {
+  	0% {
+		-webkit-transform: translate(550px, 100px);
+	}
+
+	100% {
+		-webkit-transform: translate(485px, -200px);
+	}
+}
+@keyframes topRight {
+   	0% {
+		-webkit-transform: translate(550px, 300px);
+	}
+
+	100% {
+		-webkit-transform: translate(860px, 0px);
+	}
+}
+@keyframes bottomLeft {
+    	0% {
+		-webkit-transform: translate(550px, 400px);
+	}
+
+	100% {
+		-webkit-transform: translate(100px, 550px);
+	}
+}
+@keyframes bottomMiddle {
+  	0% {
+		-webkit-transform: translate(550px, 500px);
+	}
+
+	100% {
+		-webkit-transform: translate(485px, 650px);
+	}
+}
+@keyframes bottomRight {
+   	0% {
+		-webkit-transform: translate(550px, 600px);
+	}
+
+	100% {
+		-webkit-transform: translate(860px, 750px);
+	}
+}
+
+
+@keyframes topLeftStretch{
+   
+    100% {
+        -webkit-transform: translate(100px, -200px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes topMiddleStretch{
+    
+    100% {
+        -webkit-transform: translate(485px, -200px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes topRightStretch{
+   
+    100% {
+        -webkit-transform: translate(860px, 0px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes bottomLeftStretch{
+   
+    100% {
+        -webkit-transform: translate(100px, 550px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes bottomMiddleStretch{
+   
+    100% {
+        -webkit-transform: translate(485px, 650px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes bottomRightStretch{
+    
+    100% {
+        -webkit-transform: translate(860px, 750px) scaleX(3) scaleY(4);
+    }
+}
+/* *******************flip 1 ******************/
+.objOneFlipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+/* This container is needed to position the front and back side */
+.objOneInner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.objOneFlipCard:hover .objOneInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.obj0Front, .obj0Back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid red;
+  border-radius: 25px;
+  
+}
+
+/* Style the front side (fallback if image is missing) */
+.obj0Front{
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.obj0Back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* *******************flip 2 *******************/
+.objTwoFlipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+/* This container is needed to position the front and back side */
+.objTwoInner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.objTwoFlipCard:hover .objTwoInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.obj1Front, .obj1Back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid red;
+  border-radius: 25px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.obj1Front{
+  background-color: red;
+  color: black;
+}
+
+/* Style the back side */
+.obj1Back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* *******************flip 3 ********************/
+.objThreeFlipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+/* This container is needed to position the front and back side */
+.objThreeInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.objThreeFlipCard:hover .objThreeInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.obj2Front, .obj2Back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid red;
+  border-radius: 25px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.obj2Front{
+  background-color: red;
+  color: black;
+}
+
+/* Style the back side */
+.obj2Back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* *******************flip 4 *********************/
+.objFourFlipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+/* This container is needed to position the front and back side */
+.objFourInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.objFourFlipCard:hover .objFourInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.obj3Front, .obj3Back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid red;
+  border-radius: 25px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.obj3Front{
+  background-color: red;
+  color: black;
+}
+
+/* Style the back side */
+.obj3Back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* *******************flip 5 **********************/
+.objFiveFlipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+/* This container is needed to position the front and back side */
+.objFiveInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.objFiveFlipCard:hover .objFiveInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.obj4Front, .obj4Back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid red;
+  border-radius: 25px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.obj4Front{
+  background-color: red;
+  color: black;
+}
+
+/* Style the back side */
+.obj4Back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* *******************flip 6 **********************/
+.objSixFlipCard {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.objSixInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.objSixFlipCard:hover .objSixInner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.obj5Front, .obj5Back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid red;
+  border-radius: 25px;
+  
+}
+
+/* Style the front side (fallback if image is missing) */
+.obj5Front{
+  background-color: red;
+  color: black;
+}
+
+/* Style the back side */
+.obj5Back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+@media(max-width:1000px) and (min-width:700px){
+  header {
+    display: flex;
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+  }
+  
+  nav {
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .navbar a {
+    justify-content: space-around;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: grey;
+    text-decoration: none;
+  }
+  
+  .navbar :hover {
+    color: aquamarine;
+  }
+  #aboutMeArt{
+    justify-content: center;
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    right: 120px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 16px;
+    box-shadow: 2px 2px 2px 2px grey;
+  }
+  #aboutMeArt h1{
+    margin-bottom: 5px;
+    font-size: 5vw;
+  }
+  .previewPos{
+    font-size: 3vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  footer{
+    padding-top: 50px;
+    height: 50px;
+    position: relative;
+    top: 1540px;
+    background-color: black;
+    color: grey;
+    text-align: center;
+  }
+  iframe{
+    width: 500%;
+    height: 500%;
+    border: none;
+    margin-left: 10px;
+    margin-top: 9px;
+    -webkit-transform: scale(.15,.1);
+    -moz-transform: scale(.15,.1);
+    -ms-transform: scale(.15,.1);
+    transform: scale(.15,.1);
+    -webkit-transform-origin:0 0;
+    -moz-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    transform-origin:0 0;
+  }
+  .iframeContainer{
+    width: 100%;
+  height: 100px;
+  
+  /* overflow: hidden; */
+  }
+  .previewLink{
+    position: absolute;
+    top: 58px;
+    right: 17px;
+  }
+  .flipCards{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    right: 35%;
+    top: 5%;
+  }
+  .container{
+width: 97%;
+  }
+  
+  .objOne {
+    width: 15%;
+    height: 2.5%;
+    animation:topLeft 2s, topLeftStretch 2s;
+    -webkit-animation: topLeft 2s, topLeftStretch 2s;
+    animation-delay: 0s, 2.5s;
+    -webkit-animation-delay: 0s, 2.5s;
+    animation-fill-mode: forwards;
+    
+  }
+  .objTwo {
+    width: 15%;
+    height: 5%;
+    animation: topMiddle 2s, topMiddleStretch 2s;
+    -webkit-animation: topMiddle 2s, topMiddleStretch 2s;
+    animation-delay: 0s, 2.5s;
+    -webkit-animation-delay: 0s, 2.5s;
+    animation-fill-mode: forwards;
+    
+  }
+  .objThree {
+    width: 15%;
+    height: 5%;
+    animation: topRight 2s, topRightStretch 2s;
+    -webkit-animation: topRight 2s, topRightStretch 2s;
+    animation-delay: 0s, 2.5s;
+    -webkit-animation-delay: 0s, 2.5s;
+    animation-fill-mode: forwards;
+    
+  }
+  .objFour {
+    width: 15%;
+    height: 5%;
+    animation: bottomLeft 2s, bottomLeftStretch 2s;
+    -webkit-animation: bottomLeft 2s, bottomLeftStretch 2s;
+    animation-delay: 0s, 2.5s;
+    -webkit-animation-delay: 0s, 2.5s;
+    animation-fill-mode: forwards;
+    
+  }
+  .objFive {
+    width: 15%;
+    height: 5%;
+    animation: bottomMiddle 2s, bottomMiddleStretch 2s;
+    -webkit-animation: bottomMiddle 2s, bottomMiddleStretch 2s;
+    animation-delay: 0s, 2.5s;
+    -webkit-animation-delay: 0s, 2.5s;
+    animation-fill-mode: forwards;
+    
+  }
+  .objSix {
+    width: 15%;
+    height: 5%;
+    animation:bottomRight 2s, bottomRightStretch 2s;
+    -webkit-animation: bottomRight 2s, bottomRightStretch 2s;
+    animation-delay: 0s, 2.5s;
+    -webkit-animation-delay: 0s, 2.5s;
+    animation-fill-mode: forwards;
+    
+  }
+  .objOneFlipCard {
+    background-color: transparent;
+    width: 100%;
+    height: 200%;
+  }
+  /* This container is needed to position the front and back side */
+  .objOneInner {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .objOneFlipCard:hover .objOneInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .obj0Front, .obj0Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid red;
+    border-radius: 25px;
+    
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .obj0Front{
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .obj0Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* *******************flip 2 *******************/
+  .objTwoFlipCard {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+  /* This container is needed to position the front and back side */
+  .objTwoInner {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .objTwoFlipCard:hover .objTwoInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .obj1Front, .obj1Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid red;
+    border-radius: 25px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .obj1Front{
+    background-color: red;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .obj1Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* *******************flip 3 ********************/
+  .objThreeFlipCard {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+  /* This container is needed to position the front and back side */
+  .objThreeInner {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .objThreeFlipCard:hover .objThreeInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .obj2Front, .obj2Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid red;
+    border-radius: 25px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .obj2Front{
+    background-color: red;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .obj2Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* *******************flip 4 *********************/
+  .objFourFlipCard {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+  /* This container is needed to position the front and back side */
+  .objFourInner {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .objFourFlipCard:hover .objFourInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .obj3Front, .obj3Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid red;
+    border-radius: 25px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .obj3Front{
+    background-color: red;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .obj3Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* *******************flip 5 **********************/
+  .objFiveFlipCard {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+  /* This container is needed to position the front and back side */
+  .objFiveInner {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .objFiveFlipCard:hover .objFiveInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .obj4Front, .obj4Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid red;
+    border-radius: 25px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .obj4Front{
+    background-color: red;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .obj4Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* *******************flip 6 **********************/
+  .objSixFlipCard {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .objSixInner {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .objSixFlipCard:hover .objSixInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .obj5Front, .obj5Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid red;
+    border-radius: 25px;
+    
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .obj5Front{
+    background-color: red;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .obj5Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  @keyframes topLeft {
+  	0% {
+		-webkit-transform: translate(530px, 100px);
+	}
+
+	100% {
+		-webkit-transform: translate(250px, -137px);
+	}
+}
+@keyframes topMiddle {
+  	0% {
+		-webkit-transform: translate(530px, 100px);
+	}
+
+	100% {
+		-webkit-transform: translate(530px, -137px);
+	}
+}
+@keyframes topRight {
+   	0% {
+		-webkit-transform: translate(530px, 300px);
+	}
+
+	100% {
+		-webkit-transform: translate(800px,60px);
+	}
+}
+@keyframes bottomLeft {
+    	0% {
+		-webkit-transform: translate(530px, 400px);
+	}
+
+	100% {
+		-webkit-transform: translate(250px, 550px);
+	}
+}
+@keyframes bottomMiddle {
+  	0% {
+		-webkit-transform: translate(530px, 500px);
+	}
+
+	100% {
+		-webkit-transform: translate(530px, 650px);
+	}
+}
+@keyframes bottomRight {
+   	0% {
+		-webkit-transform: translate(530px, 600px);
+	}
+
+	100% {
+		-webkit-transform: translate(800px, 750px);
+	}
+}
+
+
+@keyframes topLeftStretch{
+   
+    100% {
+        -webkit-transform: translate(250px, -200px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes topMiddleStretch{
+    
+    100% {
+        -webkit-transform: translate(575px, -137px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes topRightStretch{
+   
+    100% {
+        -webkit-transform: translate(900px,60px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes bottomLeftStretch{
+   
+    100% {
+        -webkit-transform: translate(250px, 550px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes bottomMiddleStretch{
+   
+    100% {
+        -webkit-transform: translate(575px, 650px) scaleX(3) scaleY(4);
+    }
+}
+@keyframes bottomRightStretch{
+    
+    100% {
+        -webkit-transform: translate(900px, 750px) scaleX(3) scaleY(4);
+    }
+}
+}
