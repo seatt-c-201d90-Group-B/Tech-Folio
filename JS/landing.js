@@ -107,15 +107,16 @@ function renderCards() {
   cardsParsed();
   for (let i = 0; i < cardsStored.length; i++) {
     let li = document.createElement('li');
+    li.className = 'list';
     ul.appendChild(li);
-    let div = document.createElement('div');
-    div.id = 'xdiv';
-    li.appendChild(div);
-    let deleteProject = document.createElement('p');
+    // let div = document.createElement('div');
+    // div.id = 'xdiv';
+    // li.appendChild(div);
+    let deleteProject = document.createElement('button');
     deleteProject.innerText = 'X';
     deleteProject.id = i;
     deleteProject.className = 'x';
-    div.appendChild(deleteProject);
+    li.appendChild(deleteProject);
     let h3 = document.createElement('h3');
     h3.innerText = cardsStored[i].title;
     h3.className = 'title';
@@ -135,6 +136,7 @@ function renderCards() {
 
 // add remove project function
 function removeProject(event) {
+  console.log(event.target);
   if (event.target.textContent === 'X') {
     cardsStored.splice(event.target.id, 1);
     while (ul.firstChild) {
