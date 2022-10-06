@@ -62,7 +62,7 @@ function rendCard() {
     h3.innerText = cardsStored[cardDisplay[i]].title;
     cardFront.appendChild(h3);
     h3.className = 'title';
-    li.appendChild(h3);
+    cardFront.appendChild(h3);
     let p = document.createElement('p');
     p.className = 'prjInfo';
     p.innerText = cardsStored[cardDisplay[i]].info;
