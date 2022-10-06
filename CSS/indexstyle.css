@@ -1,230 +1,210 @@
+/* Header*/
 header {
-  text-align: center;
-
-}
-
-body {
-  background-color: silver;
-
-}
-
-.navbar {
-  text-align: center;
-  text-justify: auto;
-  padding: 30px;
-}
-
-.navbar a {
-  color: azure;
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-right: 40px;
-  
-}
-
-  .navbar a:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  .navbar a:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-  }
-
-#mainTitle {
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  border: 3px solid rgb(0, 0, 0);
-  padding: 10px;
-} /* h1 */
-
-techFolio
-
-#aboutMe {
-text-align: justify;
-
-} /* main section 1 */
-
-
-#aboutMeTitle {
-text-align:left;
-text-
-
-
-}/* h3*/
-
-#aboutMe {
-  text-align: left;
-}
-
-#position {
-  text-align: left;
-
-}
-#name {
-  text-align: left;
-}
-
-
-#biography {
-  text-align: left;
-
-  padding-top: 30px;
-  padding-bottom: 30px;
-} /* main section 2 */
-
-#bioLegend {
-  text-align: left;
-  color: darkslategrey;
-}
-
-#formBio {
-  text-align: left;
-  margin: auto;
-  width: 60%;
-  padding: 10px;
-}  /*form 1*/ 
-
-#bioBtn {
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-#bioBtn:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
-}
-
-#bioBtn:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-}
-
-
-
-
-#projectCard {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-
-}
-
-#projectForm {
- text-align: center;
-  margin: auto;
-  width: 65%;
-  padding: 10px;
-}
-
-#cardList {
-  text-align: center;
-  margin: auto;
-  max-width: 60%;
-  border: 10px solid #41403e;
-  padding: 10px;
   display: flex;
-  flex-direction: column;
-  height: auto;
-  overflow-y: scroll;
+  background-color: rgb(41, 41, 41);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
 }
 
-#legend {
+/* Navbar Centering */
+nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Nav Bar Links */
+.navbar a {
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+}
+
+/* Navbar Hover Color */
+.navbar :hover {
+  color: gold;
+}
+
+/* Body */
+body {
+  background-color: rgb(29, 29, 29);
+  color: rgb(141, 141, 141);
+}
+
+/* Title */
+#techFolio {
   text-align: center;
+  font-size: 100pt;
+  margin-top: 70px;
 }
 
+/* Insturctions Box */
+#instBox {
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: gray 2px solid;
+  padding: 40px;
+  color: gold;
+  font-size: 16pt;
+}
+
+/* Top Form & Submit */
+#biography {
+  margin-top: 40px;
+  margin-left: 180px;
+}
+
+/* Name Bar */
+#name {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 300px;
+  height: 20px;
+}
+
+/* Position Bar */
+#position {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 300px;
+  height: 20px;
+}
+
+/* About yourself field */
+#aboutMe {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 1100px;
+  height: 80px;
+  text-overflow: wrap;
+}
+
+/* Top Submit button */
+#bioBtn {
+  float: right;
+  position: relative;
+  right: 290px;
+  bottom: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+}
+
+/* Bottom Form & Button */
+#projectForm {
+  text-align: center;
+  position: relative;
+  left: 100px;
+  top: 80px;
+}
+
+/* Name Project Card Bar */
 #title {
   text-align: center;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 550px;
+  height: 30px;
+  border-radius: 20px;
 }
 
+/* Info About Project Bar */
 #info {
   text-align: center;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 900px;
+  height: 30px;
+  border-radius: 20px;
 }
 
+/* Link to Project Bar */
 #link {
   text-align: center;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 900px;
+  height: 30px;
+  border-radius: 20px;
 }
 
+/* Bottom Submit Button */
 #projectBtn {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
+  margin-right: 200px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
+  margin-bottom: 100px;
+}
+
+/* View Results Button */
+#viewResults {
+  margin-left: 725px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
   position: relative;
-  text-align: left;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  }
-  
-  #projectBtn:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  #projectBtn:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-  }
+  top: 120px;
+}
 
+/* Reset Button */
+#resetBtn {
+  margin-left: 40px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
+  position: relative;
+  top: 120px;
+}
 
+/* Footer */
+footer {
+  color: gold;
+  height: 50px;
+  background-color: #000000;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 16pt;
+  position: relative;
+  bottom: -170px;
+}
 
 /* About Section Styling */
-
 ul {
   display: flex;
   flex-direction: row;
@@ -232,10 +212,12 @@ ul {
   padding: 40px;
   flex-wrap: wrap;
   gap: 20px;
-  
 }
 
+/* Card */
 li {
+  background-color: #6e6e6e;
+  border-radius: 15px;
   border-style: solid;
   border-color: #000000;
   border-width: 2px;
@@ -243,46 +225,87 @@ li {
   width: 150px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(1fr,auto);
-  grid-template-areas: 
-  "title title title x"
-  "info info info info"
-  "info info info info"
-  "info info info info"
-  "link link link link"
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(1fr, auto);
+  grid-template-areas:
+    "title title title x"
+    "info info info info"
+    "info info info info"
+    "info info info info"
+    "link link link link"
   ;
-  
 }
 
+/* Card Title */
 .title {
+  background-color: #6e6e6e;
+  padding-left: 20px;
+  margin-left: 5;
   grid-area: title;
   font-size: 1vw;
   justify-content: space-around;
+  color: gold;
 }
 
-
-
+/* X on Card */
 ul li .x {
   border-style: solid;
-  border-color: #000000;
+  background-color: #6e6e6e;
+  border-color: #070606;
   border-width: 2px;
-  width: max-content;
+  width: 100%;
+  height: 100%;
+  color: #41403E;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+#xdiv {
+  width: 30px;
+  height: 40px;
+  background-color: white;
+  grid-area: x;
+  text-align: center;
   height: max-content;
-
 }
 
-.x:hover {
+
+
+.x:hover{
+
   cursor: pointer;
+  color: red;
+  background-color: black;
 }
 
-.cardinfo{
+/* Body Text on Card */
+.cardinfo {
+  background-color: #6e6e6e;
   word-wrap: break-word;
   overflow-y: scroll;
   max-height: 80px;
   grid-area: info;
+  color: #000000;
 }
 
+/* Link on Card */
 .link {
   grid-area: link;
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+/* Container for Cards */
+#cardList {
+  margin-top: 700px;
+  text-align: center;
+  margin: auto;
+  max-width: 60%;
+  border: 5px solid #41403E;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-y: scroll;
+  border-radius: 4px;
 }
