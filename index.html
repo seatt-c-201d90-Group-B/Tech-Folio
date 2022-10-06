@@ -3,65 +3,65 @@
 
 <head>
   <title>TechFolio</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/indexstyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
   <header>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/indexstyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-
+    <nav>
+      <!-- Nav Bar -->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="preview.html">Preview</a>
+        <a href="About.html">About Us</a>
+      </div>
+    </nav>
   </header>
-  <nav>
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="preview.html">Preview</a>
-      <a href="About.html">About Us</a>
-    </div>
-  </nav>
-  <!-- CODE ???? -->
   <main>
+    <!-- Title -->
     <h1 id="techFolio">Tech-Folio</h1>
-    <h2 id="mainTitle">Instructions for page</h2>
-    <section id="aboutMeInfo">
-      <h3 id="aboutmeTitle">About yourself</h3>
-    </section>
+    <!-- Box for Instructions -->
+    <h2 id="instBox">Instructions for page</h2>
+    <!-- Top Form -->
     <section id="biography">
       <form id="formBio">
-        <fieldset>
-          <legend id="bioLegend">Tell me about yourself:</legend>
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name" required>
-          <label for="aboutMe">About Yourself:</label>
-          <input id="aboutMe" type="text" name="aboutMe" required>
-          <label for="position">Position:</label>
-          <input id="position" type="text" name="position" required>
+        <fieldset id="">
+          <input id="name" type="text" name="name" placeholder="Name" required>
+          <input id="position" type="text" name="position" placeholder="Position" required>
+          <div class=""></div>
+          <input id="aboutMe" type="text" name="aboutMe" placeholder="About Yourself" required>
         </fieldset>
         <button id="bioBtn" type="submit">Submit</button>
       </form>
     </section>
+    <!-- Bottom Form -->
     <section id="projectCard">
       <form id="projectForm">
         <fieldset>
-          <legend id="legend">Tell me about your project</legend>
-          <label for="title">Title</label>
-          <input id="title" type="text" name="title" required>
-          <label for="info">Information about project</label>
-          <input id="info" type="text" name="info" required>
-          <label for="link">Link To Project</label>
-          <input id="link" type="text" name="link" required>
+          <div class="newPcard1">
+            <input id="title" type="text" name="newcard" placeholder="New project card" required>
+          </div>
+          <div class="info1">
+            <input id="info" type="text" name="info" placeholder="Information about project" required>
+          </div>
+          <div class="link1">
+            <input id="link" type="text" name="link" placeholder="Link To Project" required>
+          </div>
         </fieldset>
         <button id="projectBtn" type="submit">Submit</button>
       </form>
     </section>
+    <!-- Card Section -->
     <section id="cardList"></section>
+    <!-- Bottom Buttons -->
     <button onclick="location.href='preview.html'" type="button" id="viewResults">View Results</button>
     <button id="resetBtn">Reset</button>
   </main>
- <footer>&copy; TechFolio 2022</footer>
+  <footer>&copy; TechFolio 2022</footer>
   <script src="JS/landing.js"></script>
-
 </body>
 
 </html>
