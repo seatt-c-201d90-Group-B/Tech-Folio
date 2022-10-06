@@ -3,40 +3,32 @@
 
 <head>
   <title>TechFolio</title>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/indexstyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 
 <body>
   <header>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/indexstyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-
+    <nav>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="preview.html">Preview</a>
+        <a href="About.html">About Us</a>
+      </div>
+    </nav>
   </header>
-  <nav>
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="preview.html">Preview</a>
-      <a href="About.html">About Us</a>
-    </div>
-  </nav>
-  <!-- CODE ???? -->
   <main>
     <h1 id="techFolio">Tech-Folio</h1>
-    <h2 id="mainTitle">Instructions for page</h2>
-    <section id="aboutMeInfo">
-      <h3 id="aboutmeTitle">About yourself</h3>
-    </section>
+    <h2 id="instBox">Instructions for page</h2>
     <section id="biography">
       <form id="formBio">
-        <fieldset>
-          <legend id="bioLegend">Tell me about yourself:</legend>
-          <label for="name">Name:</label>
-          <input id="name" type="text" name="name" required>
-          <label id="abotMe" for="aboutMe">About Yourself:</label>
-          <input id="aboutMe" type="text" name="aboutMe" required>
-          <label id="pos" for="position">Postion:</label>
-          <input id="position" type="text" name="position" required>
+        <fieldset id="">
+          <input id="name" type="text" name="name" placeholder="Name" required>
+          <input id="position" type="text" name="position" placeholder="Position" required>
+          <div class=""></div>
+          <input id="aboutMe" type="text" name="aboutMe" placeholder="About Yourself" required>
         </fieldset>
         <button id="bioBtn" type="submit">Submit</button>
       </form>
@@ -45,15 +37,12 @@
       <form id="projectForm">
         <fieldset>
           <div class="newPcard1">
-            <label for="newPcard">New project card</label>
-            <input id="newPcard" type="text" name="newPcard" placeholder="New project card" required>
+            <input id="title" type="text" name="newcard" placeholder="New project card" required>
           </div>
           <div class="info1">
-            <label for="info">Information about project</label>
-            <input id="info" type="text" name="info" placeholder="Information about projec" required>
+            <input id="info" type="text" name="info" placeholder="Information about project" required>
           </div>
           <div class="link1">
-            <label for="link">Link To Project</label>
             <input id="link" type="text" name="link" placeholder="Link To Project" required>
           </div>
         </fieldset>
