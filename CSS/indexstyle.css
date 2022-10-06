@@ -1,371 +1,198 @@
+/* Header*/
 header {
-  text-align: center;
+  display: flex;
+  background-color: rgb(41, 41, 41);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
 }
 
-body {
-  background-color: silver;
+/* Navbar Centering */
+nav {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-fieldset {
-  padding-bottom: 15px;
-  margin-left: 15px;
-}
-
-
-.navbar {
-  text-align: center;
-  text-justify: auto;
-  padding: 30px;
-  background-color: #000000;
-}
-
+/* Nav Bar Links */
 .navbar a {
-  color: azure;
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Audiowide", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
-  position: relative;
-  text-align: left;
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: rgb(177, 177, 177);
   text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-right: 50px;
-  
 }
 
-  .navbar a:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  .navbar a:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-  }
+/* Navbar Hover Color */
+.navbar :hover {
+  color: gold;
+}
 
-#mainTitle {
-margin: auto;
-width: 75%;
-padding-bottom: 35px;
-border: 3px solid #41403e;
-text-align: center;
-font-family: "Audiowide", sans-serif;
-padding-top: 5px;
-} /* h1 */
+/* Body */
+body {
+  background-color: rgb(29, 29, 29);
+  color: rgb(141, 141, 141);
+}
 
-
+/* Title */
 #techFolio {
-  font-size: 5vw;
-  font-weight: 700;
   text-align: center;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  font-family: "Audiowide", sans-serif;
-
+  font-size: 100pt;
+  margin-top: 70px;
 }
 
-#aboutMe {
-text-align: left;
-
-
-} /* main section 1 box*/
-
-
-#aboutmeTitle {
-font-family: "Audiowide", sans-serif;
-padding-left: 25px;
-font-weight: 600;
-font-size: 22px;
-padding-top: 30px;
-
-padding-bottom: 20px;
-}/* h3*/
-
-
-#bioLegend {
-  font-family: "Audiowide", sans-serif;
-padding-left: 25px;
-} /*about me info*/
-
-#abotMe{
-  position: relative;
-  top: 30px;
-  right: 270px;
+/* Insturctions Box */
+#instBox {
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: gray 2px solid;
+  padding: 40px;
+  color: gold;
+  font-size: 16pt;
 }
-#aboutMe {
-position: relative;
-top: 30px;
-right: 250px;
-text-align: left;
-font-family: "Audiowide", sans-serif;
-border-radius: 3px;
-}
-
-#pos {
-  position: relative;
-  right: 300px;
-}
-#position {
-position: relative;
-right: 300px;
-text-align: left;
-font-family: "Audiowide", sans-serif;
-border-radius: 1px;
-}
-
 
 #biography {
-text-align: left;
-font-family: "Audiowide", sans-serif;
-  padding-top: 30px;
-  padding-bottom: 30px;
-} /* main section 2 */
-
-#bioLegend {
-  text-align: left;
-  color: darkslategrey;
-  padding-bottom: 15px;
+  margin-top: 40px;
+  margin-left: 180px;
 }
 
-#formBio {
-  text-align: left;
-  font-family: "Audiowide", sans-serif;
- }  /*form 1*/ 
-
-
-
-#bioBtn:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+#name {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 300px;
+  height: 20px;
 }
 
-#bioBtn:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+#position {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 300px;
+  height: 20px;
+}
+
+#aboutMe {
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 1100px;
+  height: 80px;
+  text-overflow: wrap;
 }
 
 #bioBtn {
+  float: right;
   position: relative;
-  left: 500px;
-  bottom: 5px;
-  width: 20%;
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  /* display: inline-block; */
-  font-family: "Audiowide", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  }
-  
-  #bioBtn:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  #bioBtn:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-  }
- 
-}
-
-
-#projectCard {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-family: "Audiowide", sans-serif;
+  right: 290px;
+  bottom: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
 }
 
 #projectForm {
-  display: flex;
-text-align: center;
-margin-left: 200px;
-  width: 65%;
-  padding: 10px;
-  font-family: "Audiowide", sans-serif;
-}
-
-
-#cardList {
   text-align: center;
-  margin: auto;
-  max-width: 60%;
-  border: 10px solid #41403e;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  overflow-y: scroll;
+  position: relative;
+  left: 100px;
+  top: 80px;
 }
-
 
 #title {
-  text-align: left;
-  margin-bottom: 20px;
-  position: absolute;
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 550px;
+  height: 30px;
+  border-radius: 20px;
 }
 
-.newPcard1 {
-  color: silver;
+#info {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 900px;
+  height: 30px;
+  border-radius: 20px;
 }
 
-.info1 {
-  margin-top: 10px;
-  color: silver;
-  margin-right: 75px;
-}
-
-.link1 {
-  margin-top: 10px;
-  color:silver;
-  margin-left: 21px;
+#link {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  width: 900px;
+  height: 30px;
+  border-radius: 20px;
 
 }
 
 #projectBtn {
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  /* display: inline-block; */
-  font-family: "Audiowide", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
+  margin-right: 200px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
+  margin-bottom: 100px;
+}
+
+#viewResults {
+  margin-left: 725px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
   position: relative;
-  text-align: left;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  }
-  
-  #projectBtn:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  #projectBtn:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-  }
-
-
-
-  #viewResults {
-
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Audiowide", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
-  position: relative;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  }
-  
-
-  #viewResults:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  #viewResults.navbar {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-
-  }
+  top: 120px;
+}
 
 #resetBtn {
-
-  padding-top: 25px;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  backface-visibility: hidden;
-  background: #000000;
-  border: 0;
-  border-radius: .375rem;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Audiowide", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: 1rem 1.25rem;
+  margin-left: 40px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(41, 41, 41);
+  color: gold;
+  border-color: rgb(41, 41, 41);
+  color: gold;
   position: relative;
-  text-align: left;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-right: 35px;
-  }
-  
-  #resetBtn:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  #resetBtn:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  top: 120px;
+}
 
-  }
+footer {
+  color: gold;
+  height: 50px;
+  background-color: #000000;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 16pt;
+  position: relative;
+  bottom: -170px;
+}
 
+/*DO NOT TOUCH!!!*/
 /* About Section Styling */
 
 ul {
@@ -375,10 +202,12 @@ ul {
   padding: 40px;
   flex-wrap: wrap;
   gap: 20px;
-  
+
 }
 
 li {
+  background-color: #6e6e6e;
+  border-radius: 15px;
   border-style: solid;
   border-color: #000000;
   border-width: 2px;
@@ -386,46 +215,68 @@ li {
   width: 150px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-rows: minmax(1fr,auto);
-  grid-template-areas: 
-  "title title title x"
-  "info info info info"
-  "info info info info"
-  "info info info info"
-  "link link link link"
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(1fr, auto);
+  grid-template-areas:
+    "title title title x"
+    "info info info info"
+    "info info info info"
+    "info info info info"
+    "link link link link"
   ;
-  
+
 }
 
 .title {
+  background-color: #6e6e6e;
+  padding-left: 20px;
+  margin-left: 5;
   grid-area: title;
   font-size: 1vw;
   justify-content: space-around;
+  color: gold;
 }
-
 
 
 ul li .x {
   border-style: solid;
-  border-color: #000000;
+  background-color: #6e6e6e;
+  border-color: #6e6e6e;
   border-width: 2px;
   width: max-content;
   height: max-content;
-
+  color: #41403E;
 }
 
 .x:hover {
   cursor: pointer;
+  color: red;
 }
 
-.cardinfo{
+.cardinfo {
+  background-color: #6e6e6e;
   word-wrap: break-word;
   overflow-y: scroll;
   max-height: 80px;
   grid-area: info;
+  color: #000000;
 }
-
 .link {
   grid-area: link;
+  text-decoration: none;
+  padding-right: 5px;
+}
+
+#cardList {
+  margin-top: 700px;
+  text-align: center;
+  margin: auto;
+  max-width: 60%;
+  border: 5px solid #41403E;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-y: scroll;
+  border-radius: 4px;
 }
