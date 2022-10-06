@@ -53,11 +53,13 @@ body {
   font-size: 16pt;
 }
 
+/* Top Form & Submit */
 #biography {
   margin-top: 40px;
   margin-left: 180px;
 }
 
+/* Name Bar */
 #name {
   border-radius: 4px;
   text-align: center;
@@ -69,6 +71,7 @@ body {
   height: 20px;
 }
 
+/* Position Bar */
 #position {
   border-radius: 4px;
   text-align: center;
@@ -80,6 +83,7 @@ body {
   height: 20px;
 }
 
+/* About yourself field */
 #aboutMe {
   border-radius: 4px;
   text-align: center;
@@ -92,6 +96,7 @@ body {
   text-overflow: wrap;
 }
 
+/* Top Submit button */
 #bioBtn {
   float: right;
   position: relative;
@@ -105,6 +110,7 @@ body {
   border-color: rgb(41, 41, 41);
 }
 
+/* Bottom Form & Button */
 #projectForm {
   text-align: center;
   position: relative;
@@ -112,6 +118,7 @@ body {
   top: 80px;
 }
 
+/* Name Project Card Bar */
 #title {
   text-align: center;
   margin-bottom: 40px;
@@ -122,6 +129,7 @@ body {
   border-radius: 20px;
 }
 
+/* Info About Project Bar */
 #info {
   text-align: center;
   margin-bottom: 40px;
@@ -132,6 +140,7 @@ body {
   border-radius: 20px;
 }
 
+/* Link to Project Bar */
 #link {
   text-align: center;
   margin-bottom: 40px;
@@ -140,9 +149,9 @@ body {
   width: 900px;
   height: 30px;
   border-radius: 20px;
-
 }
 
+/* Bottom Submit Button */
 #projectBtn {
   margin-right: 200px;
   width: 200px;
@@ -155,6 +164,7 @@ body {
   margin-bottom: 100px;
 }
 
+/* View Results Button */
 #viewResults {
   margin-left: 725px;
   width: 200px;
@@ -168,6 +178,7 @@ body {
   top: 120px;
 }
 
+/* Reset Button */
 #resetBtn {
   margin-left: 40px;
   width: 200px;
@@ -181,6 +192,7 @@ body {
   top: 120px;
 }
 
+/* Footer */
 footer {
   color: gold;
   height: 50px;
@@ -192,9 +204,7 @@ footer {
   bottom: -170px;
 }
 
-/*DO NOT TOUCH!!!*/
 /* About Section Styling */
-
 ul {
   display: flex;
   flex-direction: row;
@@ -202,9 +212,9 @@ ul {
   padding: 40px;
   flex-wrap: wrap;
   gap: 20px;
-
 }
 
+/* Card */
 li {
   background-color: #6e6e6e;
   border-radius: 15px;
@@ -224,9 +234,9 @@ li {
     "info info info info"
     "link link link link"
   ;
-
 }
 
+/* Card Title */
 .title {
   background-color: #6e6e6e;
   padding-left: 20px;
@@ -237,7 +247,7 @@ li {
   color: gold;
 }
 
-
+/* X on Card */
 ul li .x {
   border-style: solid;
   background-color: #6e6e6e;
@@ -248,11 +258,13 @@ ul li .x {
   color: #41403E;
 }
 
+/* X Hover */
 .x:hover {
   cursor: pointer;
   color: red;
 }
 
+/* Body Text on Card */
 .cardinfo {
   background-color: #6e6e6e;
   word-wrap: break-word;
@@ -261,12 +273,15 @@ ul li .x {
   grid-area: info;
   color: #000000;
 }
+
+/* Link on Card */
 .link {
   grid-area: link;
   text-decoration: none;
   padding-right: 5px;
 }
 
+/* Container for Cards */
 #cardList {
   margin-top: 700px;
   text-align: center;
