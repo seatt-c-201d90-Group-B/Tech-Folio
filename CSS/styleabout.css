@@ -51,6 +51,7 @@ h2 {
   margin-left: 50px;
   margin-bottom: 20px;
   max-width: 800px;
+  height: 250px;
   box-shadow: 2px 2px 2px 2px gray;
   background-color: rgb(239, 234, 240);
 }
@@ -58,29 +59,31 @@ h2 {
 /* Image positioning / border */
 #imgPerson1 {
   float: left;
-  margin-bottom: 10px;
+  margin-top: 50px;
   box-shadow: 1px 1px 1px 1px gray;
 }
 
 /* Name Positioning */
 #person1Name {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 8px;
 }
 
 /* Github Link Positioning */
 #person1GH {
   position: relative;
-  bottom: -25px;
-  left: 245px;
+  bottom: -15px;
+  left: 450px;
 }
 
 /* Paragraph Positioning */
 #aboutPerson1 {
+  position: relative;
+  font-size: 11pt;
   text-align: center;
-  margin-top: 20px;
-  margin-left: 3px;
+  margin-top: 10px;
+  left: 10px;
 }
 
 /* Code for Eric */
@@ -214,7 +217,7 @@ h2 {
   border-radius: 16px;
   margin-left: 50px;
   margin-bottom: 20px;
-  max-width: 800px;
+  max-width: 850px;
   box-shadow: 2px 2px 2px 2px gray;
   background-color: rgb(239, 234, 240);
 }
@@ -230,21 +233,21 @@ h2 {
 #person5Name {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 8px;
 }
 
 /* Github Link Positioning */
 #person5GH {
   position: relative;
-  bottom: -40px;
-  left: 247px;
+  top: 5px;
+  left: 260px;
 }
 
 /* Paragraph Positioning */
 #aboutPerson5 {
+  position: relative;
+  font-size: 13pt;
   text-align: center;
-  margin-top: 30px;
-  margin-left: 3px;
+  left: 20px;
 }
 
 /* Team Bios */
@@ -259,6 +262,7 @@ p {
 
 /* Footer */
 footer {
+  text-align: center;
   margin-left: 38px;
   padding: 20px;
   font-family: 'Times New Roman', Times, serif;
