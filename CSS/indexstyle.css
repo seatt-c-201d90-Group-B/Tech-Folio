@@ -1,37 +1,5 @@
-/* Header*/
-header {
-  display: flex;
-  background-color: rgb(41, 41, 41);
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15pt;
-}
-
-/* Navbar Centering */
-nav {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Nav Bar Links */
-.navbar a {
-  justify-content: space-around;
-  margin-right: 30px;
-  margin-left: 30px;
-  color: rgb(177, 177, 177);
-  text-decoration: none;
-}
-
-/* Navbar Hover Color */
-.navbar :hover {
-  color: gold;
-}
-
-/* Body */
 body {
-  background-color: rgb(29, 29, 29);
-  color: rgb(141, 141, 141);
+  overflow-x: hidden;
 }
 
 /* Title */
@@ -65,10 +33,14 @@ body {
   text-align: center;
   margin-right: 40px;
   margin-bottom: 40px;
-  background-color: rgb(41, 41, 41);
+  background-color:   #6e6e6e;
   color: gold;
   width: 300px;
   height: 20px;
+}
+
+#name::placeholder {
+ color: rgb(75, 75, 75);
 }
 
 /* Position Bar */
@@ -77,25 +49,32 @@ body {
   text-align: center;
   margin-right: 40px;
   margin-bottom: 40px;
-  background-color: rgb(41, 41, 41);
+  background-color:   #6e6e6e;
   color: gold;
   width: 300px;
   height: 20px;
 }
-
+#position::placeholder {
+  color: rgb(75, 75, 75);
+ }
+ 
 /* About yourself field */
 #aboutMe {
   border-radius: 4px;
   text-align: center;
   margin-right: 20px;
   margin-bottom: 10px;
-  background-color: rgb(41, 41, 41);
+  background-color:  #6e6e6e;
   color: gold;
   width: 1100px;
   height: 80px;
   text-overflow: wrap;
 }
 
+#aboutMe::placeholder {
+  color: rgb(75, 75, 75);
+ }
+ 
 /* Top Submit button */
 #bioBtn {
   float: right;
@@ -105,7 +84,7 @@ body {
   width: 200px;
   height: 30px;
   border-radius: 4px;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(56, 56, 56);
   color: gold;
   border-color: rgb(41, 41, 41);
 }
@@ -122,34 +101,45 @@ body {
 #title {
   text-align: center;
   margin-bottom: 40px;
-  background-color: rgb(41, 41, 41);
+  background-color:  #6e6e6e;
   color: gold;
   width: 550px;
   height: 30px;
   border-radius: 20px;
 }
+#title::placeholder {
+  color: rgb(75, 75, 75);
+ }
 
 /* Info About Project Bar */
 #info {
   text-align: center;
   margin-bottom: 40px;
-  background-color: rgb(41, 41, 41);
+  background-color:  #6e6e6e;
   color: gold;
   width: 900px;
   height: 30px;
   border-radius: 20px;
 }
 
+#info::placeholder {
+  color: rgb(75, 75, 75);
+ }
+
 /* Link to Project Bar */
 #link {
   text-align: center;
   margin-bottom: 40px;
-  background-color: rgb(41, 41, 41);
+  background-color:  #6e6e6e;
   color: gold;
   width: 900px;
   height: 30px;
   border-radius: 20px;
 }
+
+#link::placeholder {
+  color: rgb(75, 75, 75);
+ }
 
 /* Bottom Submit Button */
 #projectBtn {
@@ -157,7 +147,7 @@ body {
   width: 200px;
   height: 30px;
   border-radius: 4px;
-  background-color: rgb(41, 41, 41);
+  background-color:rgb(56, 56, 56);
   color: gold;
   border-color: rgb(41, 41, 41);
   color: gold;
@@ -170,7 +160,7 @@ body {
   width: 200px;
   height: 30px;
   border-radius: 4px;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(56, 56, 56);
   color: gold;
   border-color: rgb(41, 41, 41);
   color: gold;
@@ -184,7 +174,7 @@ body {
   width: 200px;
   height: 30px;
   border-radius: 4px;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(56, 56, 56);
   color: gold;
   border-color: rgb(41, 41, 41);
   color: gold;
@@ -196,7 +186,7 @@ body {
 footer {
   color: gold;
   height: 50px;
-  background-color: #000000;
+  background-color: rgb(75, 75, 75);
   text-align: center;
   padding-top: 30px;
   font-size: 16pt;
@@ -252,9 +242,11 @@ ul li .x {
   border-style: solid;
   background-color: #6e6e6e;
   border-color: #070606;
-  border-width: 2px;
-  width: 100%;
-  height: 100%;
+  border-width: 1px;
+  height: 25px;
+  width: 25px;
+  margin-left: 13px;
+  margin-bottom: 2px;
   color: #41403E;
   border-radius: 5px;
   z-index: 2;
@@ -269,13 +261,10 @@ ul li .x {
   height: max-content;
 }
 
-
-
 .x:hover{
-
   cursor: pointer;
   color: red;
-  background-color: black;
+  background-color: gold;
 }
 
 /* Body Text on Card */

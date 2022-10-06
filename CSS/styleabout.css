@@ -1,47 +1,15 @@
-/* Header */
-header {
-  display: flex;
-  background-color: black;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15pt;
+body{
+  color: rgb(75, 75, 75);
 }
-
-/* Navbar Centering */
-nav {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Nav Bar Links */
-.navbar a {
-  justify-content: space-around;
-  margin-right: 30px;
-  margin-left: 30px;
-  color: grey;
-  text-decoration: none;
-}
-
-/* Navbar Hover Color */
-.navbar :hover {
-  color: rgb(3, 209, 30);
-}
-
-/* Body */
-body {
-  background-color: rgb(224, 223, 219);
-}
-
 /* About the Team! */
 #teamTitle {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 55pt;
-  color: black;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 100pt;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  color: rgb(141, 141, 141);
 }
+
 
 /* Code for images */
 img {
@@ -66,7 +34,7 @@ img {
 
 /* Hover for Github Links */
 .teamCont a:hover {
-  color: rgb(3, 209, 30);
+  color: gold;
 }
 
 /* Names */
@@ -296,5 +264,5 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20pt;
   font-weight: 500;
-  color: black;
+  color: silver;
 }
