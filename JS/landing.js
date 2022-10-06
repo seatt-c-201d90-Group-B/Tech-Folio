@@ -93,14 +93,14 @@ function addCard(event) {
 // **** creating render functions ****
 
 // renders bio preview
-function renderBio() {
-  let name = document.getElementById('aboutMeName');
-  name.textContent = userInfo[0].name;
-  let position = document.getElementById('aboutPosi');
-  position.textContent = userInfo[0].position;
-  let aboutMe = document.getElementById('aboutMeP');
-  aboutMe.textContent = userInfo[0].aboutMe;
-}
+// function renderBio() {
+//   let name = document.getElementById('aboutMeName');
+//   name.textContent = userInfo[0].name;
+//   let position = document.getElementById('aboutPosi');
+//   position.textContent = userInfo[0].position;
+//   let aboutMe = document.getElementById('aboutMeP');
+//   aboutMe.textContent = userInfo[0].aboutMe;
+// }
 
 // renders all cards and creates separate li elements for each
 function renderCards() {
