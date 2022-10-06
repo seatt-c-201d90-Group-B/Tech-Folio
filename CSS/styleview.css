@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 header {
   display: flex;
   background-color: black;
@@ -27,20 +29,20 @@ margin-right: auto;
 #aboutMeArt{
   justify-content: center;
   width: 1080px;
-  height: auto;
+  height: 250px;
   position: absolute;
   top: 100px;
   right: 740px;
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid gold;
   border-radius: 16px;
   box-shadow: 2px 2px 2px 2px grey;
 }
 #aboutMeArt h1{
   font-size: 5vw;
 }
-.previewPos{
-  font-size: 3vw;
+#aboutPosi{
+  font-size: 2vw;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -51,6 +53,17 @@ footer{
   background-color: black;
   color: grey;
   text-align: center;
+}
+#resetBtn{
+  width: 300px;
+  height: 80px;
+  border: 1px solid gold;
+  border-radius: 16px;
+  background-color: black;
+  color: #bbb;
+  position: absolute;
+  top: 1400px;
+  right: 1125px;
 }
 iframe{
   width: 600px;
@@ -99,6 +112,7 @@ h3{
   position: absolute;
   top: 80px;
   right: 27px;
+  color: black;
 }
 
 .objOne {
@@ -294,20 +308,20 @@ h3{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid red;
+  border: 1px solid gold;
   border-radius: 25px;
   
 }
 
 /* Style the front side (fallback if image is missing) */
 .obj0Front{
-  background-color: #bbb;
+  background-color: rgb(82, 82, 82);
   color: black;
 }
 
 /* Style the back side */
 .obj0Back {
-  background-color: dodgerblue;
+  background-color: rgb(107, 108, 108);
   color: white;
   transform: rotateY(180deg);
 }
@@ -339,19 +353,19 @@ h3{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid red;
+  border: 1px solid gold;
   border-radius: 25px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .obj1Front{
-  background-color: red;
+  background-color: rgb(82, 82, 82);
   color: black;
 }
 
 /* Style the back side */
 .obj1Back {
-  background-color: dodgerblue;
+  background-color: rgb(107, 108, 108);
   color: white;
   transform: rotateY(180deg);
 }
@@ -383,19 +397,19 @@ h3{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid red;
+  border: 1px solid gold;
   border-radius: 25px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .obj2Front{
-  background-color: red;
+  background-color: rgb(82, 82, 82);
   color: black;
 }
 
 /* Style the back side */
 .obj2Back {
-  background-color: dodgerblue;
+  background-color: rgb(107, 108, 108);
   color: white;
   transform: rotateY(180deg);
 }
@@ -427,19 +441,19 @@ h3{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid red;
+  border: 1px solid gold;
   border-radius: 25px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .obj3Front{
-  background-color: red;
+  background-color: rgb(82, 82, 82);
   color: black;
 }
 
 /* Style the back side */
 .obj3Back {
-  background-color: dodgerblue;
+  background-color: rgb(107, 108, 108);
   color: white;
   transform: rotateY(180deg);
 }
@@ -471,19 +485,19 @@ h3{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid red;
+  border: 1px solid gold;
   border-radius: 25px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .obj4Front{
-  background-color: red;
+  background-color:rgb(82, 82, 82);
   color: black;
 }
 
 /* Style the back side */
 .obj4Back {
-  background-color: dodgerblue;
+  background-color: rgb(107, 108, 108);
   color: white;
   transform: rotateY(180deg);
 }
@@ -516,24 +530,24 @@ h3{
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border: 1px solid red;
+  border: 1px solid gold;
   border-radius: 25px;
   
 }
 
 /* Style the front side (fallback if image is missing) */
 .obj5Front{
-  background-color: red;
+  background-color:rgb(82, 82, 82);
   color: black;
 }
 
 /* Style the back side */
 .obj5Back {
-  background-color: dodgerblue;
+  background-color: rgb(107, 108, 108);
   color: white;
   transform: rotateY(180deg);
 }
-@media(max-width:1000px) and (min-width:700px){
+@media(max-width:1920px) and (min-width:1080px){
   header {
     display: flex;
     background-color: black;
@@ -565,7 +579,7 @@ h3{
     height: auto;
     position: absolute;
     top: 100px;
-    right: 120px;
+    right: 575px;
     text-align: center;
     border: 1px solid red;
     border-radius: 16px;
@@ -580,6 +594,15 @@ h3{
     margin-top: 5px;
     margin-bottom: 5px;
   }
+  #resetBtn{
+    width: 200px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 16px;
+    position: absolute;
+    top: 1500px;
+    right: 870px;
+  }
   footer{
     padding-top: 50px;
     height: 50px;
@@ -590,11 +613,11 @@ h3{
     text-align: center;
   }
   iframe{
-    width: 500%;
-    height: 500%;
+    width: 600%;
+    height: 650%;
     border: none;
-    margin-left: 10px;
-    margin-top: 9px;
+    margin-left: 7px;
+    margin-top: 20px;
     -webkit-transform: scale(.15,.1);
     -moz-transform: scale(.15,.1);
     -ms-transform: scale(.15,.1);
@@ -612,23 +635,23 @@ h3{
   }
   .previewLink{
     position: absolute;
-    top: 58px;
-    right: 17px;
+    top: 100px;
+    right: 42px;
   }
   .flipCards{
     width: 100%;
-    height: 100%;
     position:absolute;
     right: 35%;
     top: 5%;
   }
   .container{
 width: 97%;
+height: 1280px;
   }
   
   .objOne {
-    width: 15%;
-    height: 2.5%;
+    width: 13%;
+    height: 4.5%;
     animation:topLeft 2s, topLeftStretch 2s;
     -webkit-animation: topLeft 2s, topLeftStretch 2s;
     animation-delay: 0s, 2.5s;
@@ -637,8 +660,8 @@ width: 97%;
     
   }
   .objTwo {
-    width: 15%;
-    height: 5%;
+    width: 13%;
+    height: 9%;
     animation: topMiddle 2s, topMiddleStretch 2s;
     -webkit-animation: topMiddle 2s, topMiddleStretch 2s;
     animation-delay: 0s, 2.5s;
@@ -647,8 +670,8 @@ width: 97%;
     
   }
   .objThree {
-    width: 15%;
-    height: 5%;
+    width: 13%;
+    height: 9%;
     animation: topRight 2s, topRightStretch 2s;
     -webkit-animation: topRight 2s, topRightStretch 2s;
     animation-delay: 0s, 2.5s;
@@ -657,8 +680,8 @@ width: 97%;
     
   }
   .objFour {
-    width: 15%;
-    height: 5%;
+    width: 13%;
+    height: 9%;
     animation: bottomLeft 2s, bottomLeftStretch 2s;
     -webkit-animation: bottomLeft 2s, bottomLeftStretch 2s;
     animation-delay: 0s, 2.5s;
@@ -667,8 +690,8 @@ width: 97%;
     
   }
   .objFive {
-    width: 15%;
-    height: 5%;
+    width: 13%;
+    height: 9%;
     animation: bottomMiddle 2s, bottomMiddleStretch 2s;
     -webkit-animation: bottomMiddle 2s, bottomMiddleStretch 2s;
     animation-delay: 0s, 2.5s;
@@ -677,8 +700,8 @@ width: 97%;
     
   }
   .objSix {
-    width: 15%;
-    height: 5%;
+    width: 13%;
+    height: 9%;
     animation:bottomRight 2s, bottomRightStretch 2s;
     -webkit-animation: bottomRight 2s, bottomRightStretch 2s;
     animation-delay: 0s, 2.5s;
@@ -711,23 +734,12 @@ width: 97%;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border: 1px solid red;
-    border-radius: 25px;
+    
     
   }
   
   /* Style the front side (fallback if image is missing) */
-  .obj0Front{
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .obj0Back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
+
   /* *******************flip 2 *******************/
   .objTwoFlipCard {
     background-color: transparent;
@@ -755,22 +767,11 @@ width: 97%;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border: 1px solid red;
-    border-radius: 25px;
+   
   }
   
   /* Style the front side (fallback if image is missing) */
-  .obj1Front{
-    background-color: red;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .obj1Back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
+ 
   /* *******************flip 3 ********************/
   .objThreeFlipCard {
     background-color: transparent;
@@ -798,22 +799,10 @@ width: 97%;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border: 1px solid red;
-    border-radius: 25px;
   }
   
   /* Style the front side (fallback if image is missing) */
-  .obj2Front{
-    background-color: red;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .obj2Back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-  }
+
   /* *******************flip 4 *********************/
   .objFourFlipCard {
     background-color: transparent;
@@ -841,21 +830,6 @@ width: 97%;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border: 1px solid red;
-    border-radius: 25px;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .obj3Front{
-    background-color: red;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .obj3Back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
   }
   /* *******************flip 5 **********************/
   .objFiveFlipCard {
@@ -884,21 +858,6 @@ width: 97%;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border: 1px solid red;
-    border-radius: 25px;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .obj4Front{
-    background-color: red;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .obj4Back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
   }
   /* *******************flip 6 **********************/
   .objSixFlipCard {
@@ -928,75 +887,59 @@ width: 97%;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border: 1px solid red;
-    border-radius: 25px;
-    
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .obj5Front{
-    background-color: red;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .obj5Back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
   }
   @keyframes topLeft {
   	0% {
-		-webkit-transform: translate(530px, 100px);
+		-webkit-transform: translate(1000px, 100px);
 	}
 
 	100% {
-		-webkit-transform: translate(250px, -137px);
+		-webkit-transform: translate(650px, -125px);
 	}
 }
 @keyframes topMiddle {
   	0% {
-		-webkit-transform: translate(530px, 100px);
+		-webkit-transform: translate(1000px, 100px);
 	}
 
 	100% {
-		-webkit-transform: translate(530px, -137px);
+		-webkit-transform: translate(1000px, -128px);
 	}
 }
 @keyframes topRight {
    	0% {
-		-webkit-transform: translate(530px, 300px);
+		-webkit-transform: translate(1000px, 300px);
 	}
 
 	100% {
-		-webkit-transform: translate(800px,60px);
+		-webkit-transform: translate(1395px,74px);
 	}
 }
 @keyframes bottomLeft {
     	0% {
-		-webkit-transform: translate(530px, 400px);
+		-webkit-transform: translate(1000px, 400px);
 	}
 
 	100% {
-		-webkit-transform: translate(250px, 550px);
+		-webkit-transform: translate(650px, 750px);
 	}
 }
 @keyframes bottomMiddle {
   	0% {
-		-webkit-transform: translate(530px, 500px);
+		-webkit-transform: translate(1000px, 500px);
 	}
 
 	100% {
-		-webkit-transform: translate(530px, 650px);
+		-webkit-transform: translate(1000px, 850px);
 	}
 }
 @keyframes bottomRight {
    	0% {
-		-webkit-transform: translate(530px, 600px);
+		-webkit-transform: translate(1000px, 600px);
 	}
 
 	100% {
-		-webkit-transform: translate(800px, 750px);
+		-webkit-transform: translate(1395px, 950px);
 	}
 }
 
@@ -1004,37 +947,37 @@ width: 97%;
 @keyframes topLeftStretch{
    
     100% {
-        -webkit-transform: translate(250px, -200px) scaleX(3) scaleY(4);
+        -webkit-transform: translate(650px, -225px) scaleX(3) scaleY(4);
     }
 }
 @keyframes topMiddleStretch{
     
     100% {
-        -webkit-transform: translate(575px, -137px) scaleX(3) scaleY(4);
+        -webkit-transform: translate(1125px, -128px) scaleX(3) scaleY(4);
     }
 }
 @keyframes topRightStretch{
    
     100% {
-        -webkit-transform: translate(900px,60px) scaleX(3) scaleY(4);
+        -webkit-transform: translate(1595px,74px) scaleX(3) scaleY(4);
     }
 }
 @keyframes bottomLeftStretch{
    
     100% {
-        -webkit-transform: translate(250px, 550px) scaleX(3) scaleY(4);
+        -webkit-transform: translate(650px, 750px) scaleX(3) scaleY(4);
     }
 }
 @keyframes bottomMiddleStretch{
    
     100% {
-        -webkit-transform: translate(575px, 650px) scaleX(3) scaleY(4);
+        -webkit-transform: translate(1125px, 850px) scaleX(3) scaleY(4);
     }
 }
 @keyframes bottomRightStretch{
     
     100% {
-        -webkit-transform: translate(900px, 750px) scaleX(3) scaleY(4);
+        -webkit-transform: translate(1595px, 950px) scaleX(3) scaleY(4);
     }
 }
 }
